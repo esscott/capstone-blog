@@ -11,9 +11,8 @@
 
 
 
-<title>My second story</title>
+<title>Post 2</title>
 
-<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -26,15 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-
-<style type="text/css">
-  code{white-space: pre-wrap;}
-  span.smallcaps{font-variant: small-caps;}
-  span.underline{text-decoration: underline;}
-  div.column{display: inline-block; vertical-align: top; width: 50%;}
-  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  ul.task-list{list-style: none;}
-    </style>
 
 
 
@@ -65,7 +55,6 @@ h6 {
   text-align: left;
 }
 </style>
-
 
 
 
@@ -339,27 +328,27 @@ div.tocify {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Your Name</a>
+      <a class="navbar-brand" href="index.html">Emma Scott</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
   <a href="index.html">
-    <span class="fas fa-home"></span>
+    <span class="fa fa-home"></span>
      
     Home
   </a>
 </li>
 <li>
   <a href="about.html">
-    <span class="fas fa-user-check"></span>
+    <span class="fa fa-user-check"></span>
      
     About Me
   </a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fas fa-newspaper"></span>
+    <span class="fa fa-newspaper"></span>
      
     Blog
      
@@ -378,25 +367,25 @@ div.tocify {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:bbaumer@smith.edu">
-    <span class="fas fa-envelope"></span>
+    <span class="fa fa-envelope"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.github.com/beanumber">
-    <span class="fas fa-github"></span>
+    <span class="fa fa-github"></span>
      
   </a>
 </li>
 <li>
   <a href="http://www.twitter.com/BaumerBen">
-    <span class="fas fa-twitter"></span>
+    <span class="fa fa-twitter"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/ben-baumer-809b3a75">
-    <span class="fas fa-linkedin"></span>
+    <span class="fa fa-linkedin"></span>
      
   </a>
 </li>
@@ -409,12 +398,19 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">My second story</h1>
+<h1 class="title toc-ignore">Post 2</h1>
 
 </div>
 
 
-<p>It was the best of times, it was the worst of times…</p>
+<p>Last August, on my birthday actually, I queued up <em>The Daily</em><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> podcast for my drive to work. It was a special episode with guest producer Annie Brown. She interviewed Robert Julian-Borchak Williams, a black man who had been misidentified and arrested for shoplifting. The facial recognition software employed by his precinct fed off of the racial bias of its creators and the selected training data. In the process of his dramatic arrest, Williams questioned the officers as his wife and children watched from the front stoop: “This is not me. You think all Black men look alike?” Referencing the super zoomed in image of the suspect, the officers agreed that it did not, in fact, look like Williams, but assured him that this was new standard procedure. They trusted the technology more than they trusted their own intuition. As an interviewee on <em>The Daily</em>, Williams acknowledged how lucky he was to have alibi in his family and colleagues, so that now he could share his story and raise awareness. After spending time in jail for a crime that he did not commit, he was released. The police department apologized profusely to him and his family — but the damage was done. This wasn’t a one time occurence nor was it a mistake that law enforcement has taken seriously and learned from.</p>
+<p>As described in <em>Data Feminism</em>, there’s a pattern here. These algorithms are only as accurate as the data they’re trained on. So, with mostly white male creators, racial bias is an overwhelmingly common ingredient. For example, recently at MIT, Joy Buolamwini, a Ghanaian-American graduate student exposed a similar flaw in an all-together different facial recognition algorithm. The software did not recognize her face at all, but when she drew a smiley face on her hand, it picked that up. It had no problem identifying her classmates who had lighter skin. Like Williams, Buolamwini gained publicity through the <em>New York Times</em> and other major news sources. But, this raises another issue. More often than not, those who are being disproportionately affected by these racist technologies are also the people who have to bear the burden of bringing these injustices, biases, and acts of systemic oppression to light. As highlighted in <em>Data Feminism</em>, those who are coding and masterminding these ignorant algorithms need to take responsibility and make change without making more work for those who are most impacted.</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://www.nytimes.com/2020/08/03/podcasts/the-daily/algorithmic-justice-racism.html" class="uri">https://www.nytimes.com/2020/08/03/podcasts/the-daily/algorithmic-justice-racism.html</a><a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
 
 
 
@@ -427,7 +423,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -466,7 +462,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
